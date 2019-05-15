@@ -5,11 +5,17 @@ class Article {
     this.oldArticle = oldArticle;
 
     this.expandButton = this.oldArticle.querySelector('.expandButton');
-    this.expandButton.textContent = 'Expand';
+    this.expandButton.textContent = '↓';
     // this.expandButton.addEventListener('click', expandArticle);
     this.expandButton.addEventListener('click', () => {
       oldArticle.classList.toggle('article-open');
-      console.log(this.expandButton)
+      this.expandButton.classList.toggle('article-open--button')
+
+      if(this.expandButton.textContent === '↓') {
+        this.expandButton.textContent = '↑';
+      } else {
+        this.expandButton.textContent = '↓';
+      }
     });
   }
 
