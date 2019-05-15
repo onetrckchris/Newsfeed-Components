@@ -69,38 +69,38 @@
 }
 .article {
   margin: 20px 10%;
-  padding: 0 20px 25px;
   border: 1px solid lightgrey;
   border-radius: 10px;
   background-color: white;
-  position: relative;
-  height: 50px;
+  display: flex;
+  height: 70px;
   overflow: hidden;
-  box-shadow: 2px 2px 2px lightgrey;
+}
+.article .article-content {
+  width: 96%;
+}
+.article .article-content p {
+  padding-left: 10px;
 }
 .article h2 {
+  padding: 10px 0px 0px 10px;
   font-size: 28px;
-  padding: 0;
-  margin: 15px 0 0;
+  margin: 0;
 }
 .article .date {
   margin: 0;
+  padding-left: 10px;
   font-size: 14px;
 }
-.article .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
 .article .expandButton {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
   font-size: 12px;
-  color: grey;
+  width: 4%;
+  color: white;
   cursor: pointer;
-  transform: translate(-50%);
-  background-color: white;
+  text-align: center;
+  height: 40px;
+  padding-top: 2%;
+  background-color: green;
 }
 .article-open {
   height: auto;

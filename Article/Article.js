@@ -9,6 +9,7 @@ class Article {
     // this.expandButton.addEventListener('click', expandArticle);
     this.expandButton.addEventListener('click', () => {
       oldArticle.classList.toggle('article-open');
+      console.log(this.expandButton)
     });
   }
 
