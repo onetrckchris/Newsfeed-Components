@@ -11,7 +11,7 @@ class Article {
 
       if(oldArticle.classList[1] != 'toggle-open') {
         TweenMax.set(oldArticle, {height: 'auto'});
-        TweenMax.from(oldArticle, 0.5, {height: 0});
+        TweenMax.from(oldArticle, 0.5, {height: 70});
         oldArticle.classList.add('toggle-open');
         TweenMax.to(menu, 0.15, {width: 0});
         TweenMax.to(menuList, 0.15, {opacity: 0});
